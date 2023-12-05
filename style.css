@@ -4,3 +4,8 @@
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.superior{
+    display: flex;
+    background-color: #3e3f43;
+}
