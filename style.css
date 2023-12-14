@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&display=swap');
+:root{
+    --black: #151515;
+    --gris: #303030;
+    --grisclarito: #7b7b7b;
+    --text-botones: #93733b;
+    --boton-fondo: #eee5d5;
+    --fondo: #ffff;
+}
 *{
     padding: 0;
     margin: 0;
@@ -5,7 +14,266 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
+/* barra de navegacion negrita de arriba */
+
 .superior{
     display: flex;
-    background-color: #3e3f43;
+    justify-content: flex-end;
+    background-color: var(--gris);
+    padding: 0 10pc;
+    color: white;
+    font-weight: 20px;
+}
+
+.idiomas{
+    height: 100%;
+}
+
+.botones-hero{
+    padding: 5px;
+    margin-right: 6px;
+}
+
+.botones-hero:hover{
+    background-color: #151515;
+}
+
+.ENTRADAS{
+    background-color: #e7d800;
+    color: var(--black);
+}
+
+.ENTRADAS:hover{
+    background-color: #d4b413 ;
+}
+
+.IDM{ 
+    background-color: var(--gris);
+    color: white;
+}
+
+.museologo{
+    width: 120px;
+    height: 60px;
+}
+
+/* Barra de navegacion blanca de abajo */
+
+
+
+.navblanco{
+    display: flex;
+    align-items: center;
+    padding: 20px 10pc;
+}
+
+#navblanco{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container-lista{
+    display: flex;
+    align-items: center;
+}
+
+.listas{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 20px;
+}
+
+.lista{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.uno{
+    color: #999999;
+    font-size: small;
+}
+
+.dos{
+    font-size: large;
+    font-weight: bold;
+}
+
+.li_hover:hover{
+    color: #9a7f4a;
+}
+
+.amigo{
+    width: 80px;
+}
+/* carrucel */
+
+.carrucel{
+    background-color: #efefef;
+}
+ 
+.carrucel-contaier{
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    padding: 20px; 
+    
+}
+.carrucel-contaier::-webkit-scrollbar {
+    display: none;
+}
+
+/* cartas de carrucel */
+
+.carta-carrucel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    color: var(--black);
+    background-color: var(--fondo);
+    margin: 20px;
+}
+
+.info{
+    margin: 30px;
+}
+
+.boton{
+    background-color: var(--boton-fondo);
+    color: var(--text-botones);
+    font-size: medium;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 30px;
+}
+
+.name{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.espacio{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+.inf{
+    margin: 10px;
+}
+
+.fecha{
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+.cuatro{
+    width: 800px;
+    height: 375px;
+}
+
+.cartas{
+    display: flex;
+    justify-content: center;
+}
+
+/* Cartas pequeñas */
+
+
+.cart-1{
+    margin-right: 20px;
+}
+
+.cart-2{
+    border-left: 2px solid var(--grisclarito);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cart-3{
+    border-left: 2px solid var(--grisclarito);
+    padding-left: 20px;
+}
+
+.nombre{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0 10px 0;
+}
+
+.boton-negro{
+    background-color: #303030;
+    width: 200px;
+    height: 20px;
+    color: var(--fondo);
+    padding: 5px;
+    border-radius: 5%; 
+}
+
+/* Colecció */
+
+.Colección{
+    background-image: url('https://www.museoreinasofia.es/sites/default/files/ouka_leele_banner_0.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fondo);
+    height: 200px;
+}
+
+#coleccion{
+    padding: 20px 160px 20px 160px;
+}
+
+.sec{
+    padding: 100px 10pc;
+}
+
+/* Actividad */
+
+.img-act{
+    width: 270px;
+}
+
+.publecidad{
+    background-color: var(--boton-fondo);
+    padding: 20px;
+    margin-top: -30px;
+    margin-left: 25px;
+    height: 20pc;
+}
+
+h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h4{
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 25px;
+}
+
+.text-publicidad{
+    margin: 15px 0;
+}
+
+.boton-publicidad{
+    background-color: #333131;
+    color: var(--fondo);
+    height: 30px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
