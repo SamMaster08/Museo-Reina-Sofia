@@ -6,6 +6,7 @@
     --text-botones: #93733b;
     --boton-fondo: #eee5d5;
     --fondo: #ffff;
+    --fondofooter: #3f3f3f;
 }
 *{
     padding: 0;
@@ -14,7 +15,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body{   
     overflow-x: hidden;
 }
 
@@ -122,9 +123,7 @@ body{
 .carrucel-contaier{
     display: flex;
     align-items: center;
-    overflow-x: auto;
-    padding: 20px; 
-    
+    overflow-x: auto;    
 }
 .carrucel-contaier::-webkit-scrollbar {
     display: none;
@@ -139,11 +138,12 @@ body{
     width: 75%;
     color: var(--black);
     background-color: var(--fondo);
-    margin: 20px;
+    margin: 40px;
 }
 
 .info{
-    margin: 30px;
+    padding: 20px;
+    width: 600px;
 }
 
 .boton{
@@ -154,9 +154,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 100px;
     height: 30px;
 }
+
 
 .name{
     font-size: 40px;
@@ -171,10 +172,12 @@ body{
 
 .inf{
     margin: 10px;
+    width: 154px;
 }
 
 .fecha{
     font-family: 'M PLUS 1p', sans-serif;
+    width: 300px;
 }
 
 .cuatro{
@@ -216,27 +219,40 @@ body{
     width: 200px;
     height: 20px;
     color: var(--fondo);
+    margin-top: 20px;
     padding: 5px;
-    border-radius: 5%; 
+    border-radius: 5px; 
+}
+
+.boton-negro-visitas{
+    background-color: #303030;
+    width: 260px;
+    height: 20px;
+    color: var(--fondo);
+    padding: 5px;
+    border-radius: 5px; 
 }
 
 /* Colecció */
 
 .Colección{
-    background-image: url('https://www.museoreinasofia.es/sites/default/files/ouka_leele_banner_0.jpg');
+    background : url('https://www.museoreinasofia.es/sites/default/files/ouka_leele_banner_0.jpg'), linear-gradient(rgba(0,0,0,0.7), #fff);
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--fondo);
     height: 200px;
+    box-shadow: #151515 0px 3px 3px;
 }
 
 #coleccion{
     padding: 20px 160px 20px 160px;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .sec{
-    padding: 100px 10pc;
+    padding: 40px 10pc;
 }
 
 /* Actividad */
@@ -245,12 +261,35 @@ body{
     width: 270px;
 }
 
+.carticas{
+    padding: 20px;
+}
+
+.big{
+    background-color: var(--boton-fondo);
+    color: var(--text-botones);
+    font-size: medium;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 217px;
+    height: 30px;
+}
+
+/* Publicidad vista hoy en el museo */
+
 .publecidad{
     background-color: var(--boton-fondo);
     padding: 20px;
     margin-top: -30px;
     margin-left: 25px;
     height: 20pc;
+}
+
+h2{
+    font-size: 30px;
+    padding: 10px;
 }
 
 h3{
@@ -276,4 +315,284 @@ h4{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+}
+
+/* Visitas comentadas */
+
+.boton-grande{
+    background-color: var(--boton-fondo);
+    color: var(--text-botones);
+    font-size: medium;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+}
+
+/* Multimedias */
+
+video{
+    width: 380px;
+}
+
+/* Audios */
+
+.container-audios{
+    display: flex;
+    justify-content: space-around;
+}
+
+.radio{
+    width: 50px;
+}
+
+/* Publicidades */
+
+.publicidades{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Cartas finales */
+
+.cartas-finales{
+    display: flex;
+    margin: 50px 0;
+}
+
+.info-end{
+    padding: 20px;
+}
+
+.info-final{
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 25px;
+}
+
+.final1{
+    background-color: #e1cb91;
+}
+
+.final2{
+    background-color: #52cad2;
+}
+
+.carta-final{
+    width: 1000px;
+    height: 258px;
+}
+
+.end{
+    width: 1457px;
+}
+
+.name-end{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.text-final{
+    padding: 20px 0;
+}
+
+.boton-final{
+    padding: 10px 0;
+    background-color: var(--gris);
+    color: var(--fondo);
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.boton-end{
+    padding: 5px 0;
+    background-color: var(--gris);
+    color: var(--fondo);
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/* Parte de arriba del footer */
+
+.botton{
+    background-color: var(--fondofooter);
+}
+
+.spam{
+    display: flex;
+    justify-content: space-around;
+    color: var(--grisclarito);
+    border-bottom: 2px solid var(--black);
+}
+
+.padding{
+    padding: 29px 159px;
+}
+
+.cart-spam{
+    width: 200px;
+}
+
+.img-spam1{
+    width: 80px;
+}
+
+.img-spam2{
+    width: 140px;
+}
+
+.img-spam3{
+    width: 160px;
+}
+
+.img-spam4{
+    width: 150px;
+}
+
+.img-spam5{
+    width: 170px;
+}
+
+.img-spam6{
+    width: 170px;
+}
+
+.info-spam{
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+/* Footer de arrivba - abajo */
+
+#name{
+    color: var(--fondo);
+    font-size: 20px;
+    margin:  20px 0;
+}
+
+#item{
+    color: #d4d4d4;
+    padding: 5px 0;
+}
+
+#item:hover{
+    text-decoration: underline;
+}
+
+.botones-footer{
+    background-color: #1e1e1e;
+    padding: 5px;
+    margin: 9px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--fondo);
+}
+
+.botones-footer:hover{
+    color: #151515;
+    background-color: var(--fondo);
+}
+
+.boton-footer-blanco{
+    background-color: var(--fondo);
+    padding: 5px;
+    margin: 9px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--black);
+}
+
+.boton-footer-blanco:hover{
+    color: var(--fondo);
+    background-color: var(--black);
+}
+
+.lista2{
+    margin-top: 60px;
+}
+
+/* Footer bajo */
+
+footer{
+    background-color: #2a2828;
+}
+
+.arriba{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--grisclarito);
+}
+
+.ARRIBA{
+    display: flex;
+}
+
+.redes{
+    width: 40px;
+    padding: 0 10px;
+}
+
+/* Footer medio */
+
+.medio{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.PLAN{
+    padding: 15px;
+    color: #d3d3d3;
+}
+
+.cositos{
+    padding: 0 10px;
+    width: 140px;
+}
+
+.blanco{
+    width: 90px;
+}
+
+.xd{
+    width: 30px;
+}
+
+.PLAN:hover{
+    text-decoration: underline;
+}
+
+/* Footer bajo */
+
+.fondo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.one{
+    width: 70px;
+}
+
+.info-end{
+    color: var(--fondo);
+}
+
+#info-end:hover{
+    text-decoration: underline;
+}
+
+.texto{
+    color: var(--fondo);
+    display: flex;
 }
